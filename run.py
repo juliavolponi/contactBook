@@ -46,4 +46,9 @@ while True:
         name = input('Enter name to update: ')
         new_number = input('Enter new number: ')
         update_contact(name, new_number)
+    elif choice == '6':
+        print('Exiting contact book ')
+        break
+    else:
+        ('Invalid option. Please try again. ')
 
