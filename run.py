@@ -61,11 +61,29 @@ def add_contact(name, number):
     except ValueError:
         print("Invalid number. Please enter a valid integer.")
         return
-
+    
+    lower_name = name.lower() # convert to lower case so it can be found no matter how typed
     data = [name, number]  # Define the data variable
     contacts_worksheet = SHEET.worksheet('contact')
     contacts_worksheet.append_row(data)
     print(f"Contact '{name}' added successfully!")
+
+# Function to search contact
+def search_contact(name):
+    """
+    FUNCTION TO SEARCH CONTACT IN CONTACT BOOK
+    """
+    contacts_worksheet = SHEET.worksheet('contact')
+    try:
+        column = contacts_worksheet.find(name)
+        lower_name= name.lower()
+        if column:
+            contact_row = contacts_worksheet.row_values(column.row)
+            print(f"Contact found: Name: {contact_row[0]}, Number: {contact_row[1]}")
+        else:
+            print(f"Contact '{name}' not found.")
+    except gspread.exceptions.GSpreadException as e:
+        print(f"An error occurred: {e}") 
 
 
 get_contact_info()
