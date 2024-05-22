@@ -12,8 +12,15 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('contact_book')
 
-contact = SHEET.worksheet('contact')
+def get_contact_info():
+    """
+    REQUEST CONTACT INFORMATION INPUT FROM USER 
+    """
+    print('-------------------------------')
+    print('---------CONTACT BOOK----------')
+    print('-------------------------------')
+    question_str= input('Please choose an option:(Add, Search, Delete, Display All):\n')
 
-data = contact.get_all_values()
+    print(f'The data provided is {question_str}')
 
-print(data)
+get_contact_info()
