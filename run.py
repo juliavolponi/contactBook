@@ -19,8 +19,14 @@ def get_contact_info():
     print('-------------------------------')
     print('---------CONTACT BOOK----------')
     print('-------------------------------')
-    question_str= input('Please choose an option:(Add, Search, Delete, Display All):\n')
+    print('1. Add Contact')
+    print('2. Search Contact')
+    print('3. Display All Contacts')
+    print('4. Delete Contact')
+    print('5. Update Contact')
+    print('6. Exit.')
+    question_str= input('Please choose an option:')
 
-    print(f'The data provided is {question_str}')
+    print(f'option chosen:{question_str}')
 
 get_contact_info()
