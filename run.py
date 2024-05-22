@@ -17,38 +17,56 @@ def get_contact_info():
     """
     REQUEST CONTACT INFORMATION INPUT FROM USER 
     """
-while True:
+    while True:
+        print('-------------------------------')
+        print('---------CONTACT BOOK----------')
+        print('-------------------------------')
+        print('1. Add Contact')
+        print('2. Search Contact')
+        print('3. Display All Contacts')
+        print('4. Delete Contact')
+        print('5. Update Contact')
+        print('6. Exit.')
+        option= input('Please choose an option: ')
 
-    print('-------------------------------')
-    print('---------CONTACT BOOK----------')
-    print('-------------------------------')
-    print('1. Add Contact')
-    print('2. Search Contact')
-    print('3. Display All Contacts')
-    print('4. Delete Contact')
-    print('5. Update Contact')
-    print('6. Exit.')
-    question_str= input('Please choose an option:')
+        if option == '1':
+          name = input('Enter name: ')
+          number = input('Enter number (only numbers): ')
+          add_contact(name, number)
+        elif option == '2':
+         name = input('Enter name to search: ')
+         search_contact(name)
+        elif option == '3':
+          display_all_contacts()
+        elif option == '4':
+         name = input('Enter name to delete: ')
+         delete_contact(name)
+        elif option == '5':
+          name = input('Enter name to update: ')
+          new_number = input('Enter new number: ')
+          update_contact(name, new_number)
+        elif option == '6':
+          print('Exiting contact book ')
+          break
+        else:
+          print("Invalid option. Please try again.")
 
-    if choice == '1':
-        name = input('Enter name: ')
-        number = input('Enter number: ')
-        add_contact(name, number)
-    elif choice == '2':
-       name = input('Enter name to search: ')
-       search_contact(name)
-    elif choice == '3':
-        display_all_contacts()
-    elif choice == '4':
-       name = input('Enter name to delete: ')
-       delete_contact(name)
-    elif choice == '5':
-        name = input('Enter name to update: ')
-        new_number = input('Enter new number: ')
-        update_contact(name, new_number)
-    elif choice == '6':
-        print('Exiting contact book ')
-        break
-    else:
-        ('Invalid option. Please try again. ')
+# Function to add contact
+def add_contact(name, number):
+    """
+    FUNCTION TO ADD CONTACT TO CONTACT BOOK
+    """
+    try:
+        number = int(number)  # Ensure number is an intenger
+    except ValueError:
+        print("Invalid number. Please enter a valid integer.")
+        return
+
+    data = [name, number]  # Define the data variable
+    contacts_worksheet = SHEET.worksheet('contact')
+    contacts_worksheet.append_row(data)
+    print(f"Contact '{name}' added successfully!")
+
+
+get_contact_info()
 
