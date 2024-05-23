@@ -109,12 +109,12 @@ def delete_contact(name):
     try:
         all_records = contacts_worksheet.get_all_records()
         lower_name = name.lower()
-        for idx, record in enumerate(all_records, start=2):  # start=2 to account for header row
+        for i, record in enumerate(all_records, start=2):  # start=2 to account for header row
             if lower_name in record.get('LowerName', ''):
                 # Confirmation prompt
                 confirm = input(f"Are you sure you want to delete the contact '{record['Name']}'? (yes/no): ")
                 if confirm.lower() == 'yes':
-                    contacts_worksheet.delete_rows(idx)
+                    contacts_worksheet.delete_rows(i)
                     print(f"Contact '{record['Name']}' deleted successfully.")
                 else:
                     print("Deletion cancelled.")
