@@ -123,6 +123,31 @@ def delete_contact(name):
     except gspread.exceptions.GSpreadException as e:
         print(f"An error occurred: {e}")
 
+# Function to update contact
+def update_contact(name, new_number):
+    """
+    FUNCTION TO UPDATE A CONTACT'S NUMBER
+    """
+    try:
+        new_number = int(new_number)  # Ensure new number is an integer
+    except ValueError:
+        print("Invalid number. Please enter a valid integer.")
+        return
 
+    contacts_worksheet = SHEET.worksheet('contact')
+    try:
+        all_records = contacts_worksheet.get_all_records()
+        lower_name = name.lower()
+        for i, record in enumerate(all_records, start=2):  # start=2 to account for header row
+            if lower_name in record.get('LowerName', ''):
+                # Update the number in the third column
+                contacts_worksheet.update_cell(i, 3, new_number)  # Updating number in the correct column
+                print(f"Contact '{record['Name']}' updated successfully.")
+                return
+        print(f"Contact '{name}' not found.")
+    except gspread.exceptions.GSpreadException as e:
+        print(f"An error occurred: {e}")
+
+# Main function to start the contact book 
 get_contact_info()
 
