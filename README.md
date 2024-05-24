@@ -36,3 +36,37 @@ Contact Book is an is a simple application that allows you to add, search, displ
 
 ![Flow chart of the app](imgs/flowchart.png)
 
+# Features
+
+ ## Existing Features
+
+### Add Contact:
+
+* Enter a new contact with name and number.
+* Automatically store the contact in both original and lowercase formats for case-insensitive search.
+
+### Search Contact:
+
+* Search for contacts by name, supporting case-insensitive searches.
+
+### Display All Contacts:
+
+* List all stored contacts with their names and numbers.
+
+### Delete Contact:
+
+* Search for contacts by name and display results.
+
+* Provide an option to confirm before deleting the contact.
+
+### Update Contact:
+
+* Search for contacts by name and display matching results.
+* Allow the selection of a contact to update its number.
+* Replace the old number with the new one, ensuring no duplication.
+
+### Data/APIs:
+* Securely store contact information in Google Sheets.
+
+
+
