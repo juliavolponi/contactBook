@@ -30,19 +30,31 @@ def get_contact_info():
         option= input('Please choose an option: ')
 
         if option == '1':
-          name = input('Enter name:\n')
+          name = input('Enter name:\n').strip()
+          if not name:
+                print("Name cannot be empty. Please try again.")
+                continue
           number = input('Enter number (only numbers):\n')
           add_contact(name, number)
         elif option == '2':
-         name = input('Enter name to search:\n')
+         name = input('Enter name to search:\n').strip()
+         if not name:
+                print("Name cannot be empty. Please try again.")
+                continue
          search_contact(name)
         elif option == '3':
           display_all_contacts()
         elif option == '4':
-         name = input('Enter name to delete:\n')
+         name = input('Enter name to delete:\n').strip()
+         if not name:
+                print("Name cannot be empty. Please try again.")
+                continue
          delete_contact(name)
         elif option == '5':
-          name = input('Enter name to update:\n')
+          name = input('Enter name to update:\n').strip()
+          if not name:
+                print("Name cannot be empty. Please try again.")
+                continue
           new_number = input('Enter new number:\n')
           update_contact(name, new_number)
         elif option == '6':
