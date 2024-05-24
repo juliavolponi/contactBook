@@ -1,6 +1,6 @@
 # Contact Book
 
-Contact Book is an is a simple application that allows you to add, search, display, delete, and update contacts using Google Sheets as the backend storage. The application targets anyone needing a simple contact management tool.
+Contact Book is a simple application that allows you to add, search, display, delete, and update contacts using Google Sheets as the backend storage. The application targets anyone needing a simple contact management tool.
 
 [View application here](https://contact-book-volponi-6a8daca0e195.herokuapp.com/)
 
@@ -129,7 +129,7 @@ The project was deployed to [Heroku](https://www.heroku.com). To deploy, please 
 
 # Acknowledgements
 
-The application Contacts Book was completed as my third Portfolio Project (Python) for the Full Stack Software Development Diploma at the Code Institute. I would like to thank Code Institute for such good teaching, Marko for always checking up and offering advices/help when needed, and specially to my mentor Precious Ijege for always guiding me, giving me ideas and poiting improvements.
+The application Contacts Book was completed as my third Portfolio Project (Python) for the Full Stack Software Development Diploma at the Code Institute. I would like to thank Code Institute for such good teaching, Marko for always checking up and offering advices/help when needed, and specially to my mentor Precious Ijege for always guiding me, giving me ideas and pointing improvements.
 
 
 
