@@ -113,7 +113,7 @@ The project was deployed to [Heroku](https://www.heroku.com). To deploy, please 
 
 3. Now it's time to enter an application name that needs to be unique. When you have chose the name, choose your region and click 'Create app".
 
-4. On the next page, click the 'Settings' tab and find the "Config Vars" section. Click "Reveal Config Vars". Now it's time to add values. In the 'WOM Record Collection' case I needed to add two values. The first one was the credentials (KEY input field = "CREDS", VALUE input field = "your credentials", click the 'Add' button. Next you need to add another key, enter "PORT" in the KEY input field and "8000" in the VALUE field, click the 'Add' button.
+4. On the next page, click the 'Settings' tab and find the "Config Vars" section. Click "Reveal Config Vars". Now it's time to add values. In the 'WOM Record Collection' case I needed to add two values. The first one was the credentials (KEY input field = "CREDS", VALUE input field = "your credentials", click the 'Add' button. Next you need to add another key, enter "PORT" in the KEY input field and "8000" in the VALUE field), click the 'Add' button.
 
 5. Scroll down to the buildpacks section on the settings page and click the button 'Add buildpack'.
 
@@ -123,6 +123,13 @@ The project was deployed to [Heroku](https://www.heroku.com). To deploy, please 
 
 8. Scroll down on the deploy page and choose deployment type. Choose to enable automatic deployments if you want to and then  click 'Deploy Branch'.
 
+# Credits
+
+* Template for read.me provided by Code Institute (with some ideas that my mentor Precious Ijege showed me).
+
+# Acknowledgements
+
+The application Contacts Book was completed as my third Portfolio Project (Python) for the Full Stack Software Development Diploma at the Code Institute. I would like to thank Code Institute for such good teaching, Marko for always checking up and offering advices/help when needed, and specially to my mentor Precious Ijege for always guiding me, giving me ideas and poiting improvements.
 
 
 
