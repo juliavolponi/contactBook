@@ -68,5 +68,66 @@ Contact Book is an is a simple application that allows you to add, search, displ
 ### Data/APIs:
 * Securely store contact information in Google Sheets.
 
+## Features Left to Implement
+
+ * Add possibility of updating also names.
+ * Add more intelligent searching for choosing which contact if contains the same first name to update or delete.
+
+ # Technologies Used
+
+ ## Languages
+ * Python
+
+ ## Frameworks, Libraries & Software
+ * Google Sheets - Used to host the application data.
+ * Github - Used to host and edit the website.
+ * Gitpod - Used to code entire application.
+ * Heroku - A cloud platform that the application is deployed to.
+ * Responsive Design Checker - Used for responsiveness check.
+
+ # Testing
+
+ * As a MacOS/Safari user, PP3 does not work properly on my computer.
+
+ ## LightHouse
+
+ Google Lighthouse in Chrome Developer Tools was used to test the application within the areas of Performance, Accessibility, Best Practices and SEO. The testing showed these results: Accessability: 94, Best Practices: 100, SEO: 91, Performance: 94. 
+
+![Lighthouse validator](imgs/lighthouse.png)
+
+## Bugs
+
+* Bug: During the mid project session with my mentor Precious he found a bug in the add contact function. It was possible for the user to input empty strings. This generated a problem when listing the table due to empty lines.
+
+* Bug: Contacts weren't case-insensitive. Which could cause problems if user tried to search for contact with uppercase or otherwise.
+
+# Deployment
+
+## Deployment To Heroku 
+
+The project was deployed to [Heroku](https://www.heroku.com). To deploy, please follow the process below:
+
+1. The first step is to log in to Heroku (or create an account if needed).
+
+2. In the top right corner there is a button that is labeled 'New'. Click that and then select 'Create new app'.
+
+3. Now it's time to enter an application name that needs to be unique. When you have chose the name, choose your region and click 'Create app".
+
+4. On the next page, click the 'Settings' tab and find the "Config Vars" section. Click "Reveal Config Vars". Now it's time to add values. In the 'WOM Record Collection' case I needed to add two values. The first one was the credentials (KEY input field = "CREDS", VALUE input field = "your credentials", click the 'Add' button. Next you need to add another key, enter "PORT" in the KEY input field and "8000" in the VALUE field, click the 'Add' button.
+
+5. Scroll down to the buildpacks section on the settings page and click the button 'Add buildpack'.
+
+6. Add "Python" and node.js". It is important that Python is listed above node.js.
+
+7. Scroll to the top of the settings page and click the 'Deploy' tab. For deployment method, select 'Github'. Search for the repository name you want to deploy and then click connect.
+
+8. Scroll down on the deploy page and choose deployment type. Choose to enable automatic deployments if you want to and then  click 'Deploy Branch'.
+
+
+
+
+
+
+
 
 
