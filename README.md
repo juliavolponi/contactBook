@@ -71,25 +71,34 @@ Contact Book is a simple application that allows you to add, search, display, de
 * Enter a new contact with name and number.
 * Automatically store the contact in both original and lowercase formats for case-insensitive search.
 
+![Add Contact Questions](imgs/add-contact.png)
+
 ### Search Contact:
 
 * Search for contacts by name, supporting case-insensitive searches.
+
+![Search Contacts Question](imgs/search-contact.png)
 
 ### Display All Contacts:
 
 * List all stored contacts with their names and numbers.
 
+![Display All Contacts Question](imgs/display-contacts.png)
+
 ### Delete Contact:
 
 * Search for contacts by name and display results.
-
 * Provide an option to confirm before deleting the contact.
+
+![Delete Contact Question](imgs/delete-contact.png)
 
 ### Update Contact:
 
 * Search for contacts by name and display matching results.
 * Allow the selection of a contact to update its number.
 * Replace the old number with the new one, ensuring no duplication.
+
+![Update Contact Question](imgs/update-contact.png)
 
 ### Data/APIs:
 * Securely store contact information in Google Sheets.
@@ -102,18 +111,22 @@ Contact Book is a simple application that allows you to add, search, display, de
  # Technologies Used
 
  ## Languages
- * Python
+ * [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) - Provides the functionality for the application.
 
  ## Frameworks, Libraries & Software
- * Google Sheets - Used to host the application data.
- * Github - Used to host and edit the website.
- * Gitpod - Used to code entire application.
- * Heroku - A cloud platform that the application is deployed to.
- * Responsive Design Checker - Used for responsiveness check.
+ * [Google Sheets](https://www.google.co.uk/sheets/about/) - Used to host the application data.
+ * [Github](https://github.com/) - Used to host and edit the website.
+ * [Gitpod](https://www.gitpod.io/) - Used to code entire application.
+ * [Heroku](https://en.wikipedia.org/wiki/Heroku) - A cloud platform that the application is deployed to.
+ * [Responsive Design Checker](https://www.responsivedesignchecker.com/) - Used for responsiveness check.
 
  # Testing
 
- * As a MacOS/Safari user, PP3 does not work properly on my computer.
+ ## PEP Validation
+
+ No erros were returned when passing through the PEP validator.
+
+ ![PEP Validator](imgs/pep.png)
 
  ## LightHouse
 
