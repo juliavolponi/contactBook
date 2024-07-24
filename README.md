@@ -117,7 +117,7 @@ Contact Book is a simple application that allows you to add, search, display, de
  * [Google Sheets](https://www.google.co.uk/sheets/about/) - Used to host the application data.
  * [Github](https://github.com/) - Used to host and edit the website.
  * [Gitpod](https://www.gitpod.io/) - Used to code entire application.
- * [Heroku](https://en.wikipedia.org/wiki/Heroku) - A cloud platform that the application is deployed to.
+ * [Heroku](https://www.heroku.com/auth/login) - A cloud platform that the application is deployed to.
  * [Responsive Design Checker](https://www.responsivedesignchecker.com/) - Used for responsiveness check.
 
  # Testing
