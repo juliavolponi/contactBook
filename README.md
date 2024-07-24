@@ -6,6 +6,32 @@ Contact Book is a simple application that allows you to add, search, display, de
 
 ![Contact book responsive design](imgs/responsive.png)
 
+# Table of Content
+
+  * [**User Experience**](<#user-experience>)
+      * [User Stories](<#user-stories>)
+      * [User Goals](<#user-goals>)
+  * [**Design**](<#design>)
+      * [FlowChart](<#flowchart>)
+  * [**Features**](<#features>)
+      * [Add Contact](<#add-contact>)
+      * [Search Contact](<#search-contact>)
+      * [Display All Contacts](<#display-all-contacts>)
+      * [Delete Contact](<#delete-contact>)
+      * [Update Contact](<#update-contact>)
+      * [Data/APIs](<#dataapis>)
+  * [**Features Left to Implement**](<#features-left-to-implement>)
+  * [**Technologies Used**](<#technologies-used>)
+  * [**Frameworks, Libraries & Software**](<#frameworks-libraries--software>)
+  * [**Testing**](<#testing>)
+      * [Lighthouse](<#lighthouse>)
+  * [**Bugs**](<#bugs>)
+  * [**Deployment**](<#deployment>)
+      * [Deployment To Heroku](<#deployment-to-heroku>)
+  * [**Credits**](<#credits>)
+  * [**Acknowledgements**](<#acknowledgements>)
+
+
 # User Experience
 
 
