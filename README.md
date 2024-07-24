@@ -24,6 +24,7 @@ Contact Book is a simple application that allows you to add, search, display, de
   * [**Technologies Used**](<#technologies-used>)
   * [**Frameworks, Libraries & Software**](<#frameworks-libraries--software>)
   * [**Testing**](<#testing>)
+      * [PEP Validation](<#pep-validation>)
       * [Lighthouse](<#lighthouse>)
   * [**Bugs**](<#bugs>)
   * [**Deployment**](<#deployment>)
